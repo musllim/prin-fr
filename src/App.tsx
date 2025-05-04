@@ -11,7 +11,7 @@ function App() {
   const register = async (formData: FormData) => {
     try {
 
-      const req = await fetch('http://localhost:3000/register', {
+      const req = await fetch('https://express-starter-u69f.onrender.com/register', {
         method: 'POST',
         body: JSON.stringify(Object.fromEntries(formData)),
         headers: {
@@ -32,7 +32,7 @@ function App() {
   const login = async (formData: FormData) => {
     try {
 
-      const req = await fetch('http://localhost:3000/login', {
+      const req = await fetch('https://express-starter-u69f.onrender.com/login', {
         method: 'POST',
         body: JSON.stringify(Object.fromEntries(formData)),
         headers: {

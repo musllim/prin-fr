@@ -40,7 +40,7 @@ const ProfilePage: React.FC = () => {
         return null
       }
 
-      const req = await fetch("http://localhost:3000/profile/me", {
+      const req = await fetch("https://express-starter-u69f.onrender.com/profile/me", {
         headers: {
           "content-type": "application/json",
           authorization: "Bearer " + token,
@@ -142,7 +142,7 @@ const ProfilePage: React.FC = () => {
       formDataObj.address = addressObj
 
       // Send the update request to the API
-      const response = await fetch("http://localhost:3000/profile/me", {
+      const response = await fetch("https://express-starter-u69f.onrender.com/profile/me", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
